@@ -16,7 +16,7 @@ function greet(time){
     let afternoonTime=hour>=12 && hour<=17;
     let eveningTime=hour>17 && hour<=24;
   switch(true) {
-   
+
     case morningTime :
     return "Good Morning";
           break;
