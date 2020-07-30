@@ -19,15 +19,13 @@ function greet(time){
 
     case morningTime :
     return "Good Morning";
-
-      break;
+          break;
       case afternoonTime:
         return "Good Afternoon";
-        break;
+            break;
         case eveningTime:
         return "Good Evening"
-
-          break;
+              break;
           default:
           return:"not a good format";
   }
