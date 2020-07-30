@@ -12,7 +12,7 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(time){
    let hour=parseInt(time);
-  swich(houre){
+  swich(hour){
     case hour<12:
     return "Good Morning";
 
