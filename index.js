@@ -16,7 +16,7 @@ function greet(time){
     morningTime =hour<12;
     afternoonTime=hour>=12 && hour<=17;
     eveningTime=hour>17 && hour<=24;
-    
+
     case morningTime :
     return "Good Morning";
 
