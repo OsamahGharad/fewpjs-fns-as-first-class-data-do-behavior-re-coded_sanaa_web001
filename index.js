@@ -12,11 +12,11 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(time){
    let hour=parseInt(time);
-  swich(hour){
-    let morningTime =hour<12;
+    let morningTime = (hour<12);
     let afternoonTime=hour>=12 && hour<=17;
     let eveningTime=hour>17 && hour<=24;
-
+  switch(true) {
+   
     case morningTime :
     return "Good Morning";
           break;
@@ -27,7 +27,7 @@ function greet(time){
         return "Good Evening"
               break;
           default:
-          return:"not a good format";
+          return "wrong, it should be less than 25";
   }
 }
 /* Write your implementation of displayMessage() */
