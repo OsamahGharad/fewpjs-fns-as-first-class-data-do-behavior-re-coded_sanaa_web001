@@ -11,3 +11,21 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+function greet(timeIn24) {
+  // HH:MM format
+  let hours = parseInt(timeIn24);
+  if (hours < 12) {
+    return "Good Morning";
+  } else if (hours >= 12 && hours <= 17) {
+    return "Good Afternoon";
+  } else if (hours > 17) {
+    return "Good Evening";
+  }
+  // return(hours);
+}
+/* Write your implementation of displayMessage() */
+function displayMessage(string) {
+  const greeting = document.querySelector("#greeting");
+  console.log(greeting);
+  greeting.innerText = string;
+}
