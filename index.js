@@ -15,14 +15,14 @@ function greet(time){
   swich(houre){
     case hour<12:
     return "Good Morning";
-      
+
       break;
       case hour>=12 && hour<=17:
         return "Good Afternoon";
         break;
         case hour>17 && hour<=24:
         return "Good Evening"
-          
+
           break;
           default:
           return:"not a good format";
@@ -34,4 +34,3 @@ function displayMessage(message){
   const greeting =document.querySelector('#greeting');
   greeting.innerText=message;
 }
-
