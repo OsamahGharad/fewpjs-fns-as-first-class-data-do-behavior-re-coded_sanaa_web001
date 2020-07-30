@@ -13,14 +13,18 @@ function handleClick(e) {
 function greet(time){
    let hour=parseInt(time);
   swich(hour){
-    case hour<12:
+    morningTime =hour<12;
+    afternoonTime=hour>=12 && hour<=17;
+    eveningTime=hour>17 && hour<=24;
+    
+    case morningTime :
     return "Good Morning";
 
       break;
-      case hour>=12 && hour<=17:
+      case afternoonTime:
         return "Good Afternoon";
         break;
-        case hour>17 && hour<=24:
+        case eveningTime:
         return "Good Evening"
 
           break;
