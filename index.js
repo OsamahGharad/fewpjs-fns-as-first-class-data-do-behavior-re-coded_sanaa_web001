@@ -10,22 +10,28 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
-function greet(timeIn24) {
-  // HH:MM format
-  let hours = parseInt(timeIn24);
-  if (hours < 12) {
+function greet(time){
+  hour=parseInt(time);
+  swich(houre){
+    case hour<12:
     return "Good Morning";
-  } else if (hours >= 12 && hours <= 17) {
-    return "Good Afternoon";
-  } else if (hours > 17) {
-    return "Good Evening";
+      
+      break;
+      case hour>=12 && hour<=17:
+        return "Good Afternoon";
+        break;
+        case hour>17 && hour<=24:
+        return "Good Evening"
+          
+          break;
+          default:
+          return:"not a good format";
   }
-  // return(hours);
 }
 /* Write your implementation of displayMessage() */
-function displayMessage(string) {
-  const greeting = document.querySelector("#greeting");
-  console.log(greeting);
-  greeting.innerText = string;
+
+function displayMessage(message){
+  const greeting =document.querySelector('#greeting');
+  greeting.innerText=message;
 }
+
