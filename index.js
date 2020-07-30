@@ -27,7 +27,7 @@ function greet(time){
         return "Good Evening"
               break;
           default:
-          return "wrong, it should be less than 25";
+          return "wrong, it should be a number less than 25";
   }
 }
 /* Write your implementation of displayMessage() */
